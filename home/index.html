@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>All Mediks: Online Medical Platform</title>
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="../assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex justify-content-center">
+                <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+                    <a class="navbar-brand brand-logo" href="index.html"><strong>ALL</strong> MEDIKS</a>
+                    <a class="navbar-brand brand-logo-mini" href="index.html"><strong>ALL</strong>MEDIKS</a>
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button"
+                        data-toggle="minimize">
+                        <span class="mdi mdi-sort-variant"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+                            <img class="navbar-profile-img" />
+                            <span class="nav-profile-name"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                            aria-labelledby="profileDropdown">
+                            <a class="dropdown-item" href="#" onclick="logout()">
+                                <i class="mdi mdi-logout text-primary"></i>
+                                Logout
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="mdi mdi-home menu-icon"></i>
+                            <span class="menu-title">Homepage</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">
+                            <i class="mdi mdi-magnify menu-icon"></i>
+                            <span class="menu-title">Search</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">
+                            <i class="mdi mdi-account menu-icon"></i>
+                            <span class="menu-title">My Profile</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="search.html">
+                            <i class="mdi mdi-content-paste menu-icon"></i>
+                            <span class="menu-title">Book Appointment</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout()">
+                            <i class="mdi mdi-logout menu-icon"></i>
+                            <span class="menu-title">Logout</span>
+                        </a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+
+            <div class="main-panel">
+                <div class="content-wrapper" id="main">
+                    <!-- <div class="row">
+                        <div class="col-md-12 grid-margin">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex align-items-end flex-wrap">
+                                    <div class="me-md-3 me-xl-5">
+                                        <h2 class="display-3" id="heading">My Appointments</h2>
+                                        <p id="subheading">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        
+                                        
+                                    </div>
+                                </div>
+
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
+                            <div class="card">
+                              <div class="card-body">
+                                <div class="template-demo d-flex flex-nowrap">
+                                    <button type="button" class="btn btn-outline-primary btn-rounded btn-icon"><strong>1</strong></button>
+                                    <h4 class="display-3 text-primary" style="margin-top: 5px; border-top: none;">Dr. Keith Williams</h4>
+                                </div>
+                                <blockquote class="blockquote">
+                                    <h6 class="display-6" style="font-size: 18px;">Problem</h6>
+                                    <p class="mb-0" style="line-height: 25px; font-size: 12px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                </blockquote>
+                                <div class="template-demo">
+                                    <button type="button" class="btn btn-outline-dark btn-rounded btn-fw">View Details</button>
+                                  </div>
+                              </div>
+                             
+                            </div>
+                          </div>
+
+                    </div> -->
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="vendors/base/vendor.bundle.base.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/main.js"></script>
+
+    
+
+</body>
+
+</html>

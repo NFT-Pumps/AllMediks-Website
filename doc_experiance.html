@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>All Mediks | Profile Registration</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="assets/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="plugins/jqueryfiler/css/jquery.filer.css" rel="stylesheet">
+    <link href="assets/css/select2-bootstrap.css" rel="stylesheet">
+    <link href="assets/css/select2.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+
+            <a href="index.html" class="logo me-auto"><img src="assets/img/allmedik.png" /></a>
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="#departments">Specializtion</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li class="dropdown"><a href="#"><span>My Account</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="profile_type.html">Register</a></li>
+                            <li><a href="#">Sign In</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="#">Careers</a></li>
+                    <li><a class="nav-link scrollto" href="#">Mobile App</a></li>
+
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+            <a href="buy_token.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Buy</span>
+                Token</a>
+
+        </div>
+    </header>
+
+    <main id="main">
+
+
+        <section class="breadcrumbs">
+            <div class="container" style="margin-top: 50px;">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Create Your Account</h2>
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Registration</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section style="background-color: #ecf8f9;">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="card card-body">
+                            <h3 style="text-align: center;"
+                                class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">
+                                Experiance <span class="text-indigo-600" style="color: #3fbbc0"> Information</span></h3>
+
+                            <form action="#" method="POST" id="experiance_form" style="margin-top: 20px;">
+                                <input id="action" name="action" style="display: none;" value="register_doc_exp">
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-4">
+                                            <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                                for="degree">Institute</label>
+                                            <div class="relative">
+                                                <input id="institute_name" name="institute_name" placeholder="Enter Institute Name"
+                                                    class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
+                                            </div>
+                                            <small class="error_element" id="institute_name_error"></small>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-4">
+                                            <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                                for="job_title">Job Title</label>
+                                            <div class="relative">
+                                                <input id="job_title" name="job_title" placeholder="Enter Job Title"
+                                                    class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
+                                            </div>
+                                            <small class="error_element" id="job_title_error"></small>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                                for="from_date">From</label>
+                                            <div class="relative">
+                                                <input id="from_date" name="from_date" placeholder="dd/mm/yyyy"
+                                                    class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 datepicker" />
+                                            </div>
+                                            <small class="error_element" id="from_date_error"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                                for="to_date">To</label>
+                                            <div class="relative">
+                                                <input id="to_date" name="to_date" placeholder="dd/mm/yyyy"
+                                                    class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 datepicker" />
+                                            </div>
+                                            <small class="error_element" id="to_date_error"></small>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-4">
+                                            <label class="block  tracking-wide text-gray-700 text-xs font-bold mb-2"
+                                                for="total_experiance">Total Experiance in Years</label>
+                                            <div class="relative">
+                                                <input id="total_experiance" name="total_experiance" placeholder="Enter Total Experiance"
+                                                    class="block appearance-none w-full border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" />
+                                            </div>
+                                            <small class="error_element" id="total_experiance_error"></small>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <button type="submit" class="btn btn-outline-primary" id="submit_btn" style="width: 100%;">Add Experiance</button>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <a href="doc_certifications.html" class="btn btn-success" style="width: 100%;" >Next</a>
+
+                                    </div>
+                                  
+                                  
+                                </div>
+
+
+
+
+                            </form>
+                            <div class="row" id="table_wrapper"
+                                style="display: none; margin-top: 50px; margin-bottom: 50px;">
+                                <div class="col-lg-12">
+                                    <h1 class="py-3" style="font-size: 24px; font-weight: 900;">My Experiances</h1>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <td>Sr.</td>
+                                                <td>Job Title</td>
+                                                <td>From</td>
+                                                <td>To</td>
+                                                <td>Experiance</td>
+                                                <td>Institute</td>
+                                                <td></td>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody id="table">
+
+                                        </tbody>
+
+                                    </table>
+
+                                </div>
+
+                            </div>
+                           
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        
+
+    </main>
+
+
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-info">
+                            <h3><img src="assets/img/allmedik.png" style="max-height: 140px; width: 140px;" /></h3>
+                            <p>
+                                A108 Adam Street <br>
+                                NY 535022, USA<br><br>
+                                <strong>Phone:</strong> +1 5589 55488 55<br>
+                                <strong>Email:</strong> info@example.com<br>
+                            </p>
+                            <div class="social-links mt-3">
+                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Pharmacies</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Labortaries</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Radiology / Sonography </a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <h4>Our Newsletter</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>ALLMEDIKS</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medicio-free-bootstrap-theme/ -->
+                Designed by <a href="#">QasimIhsan</a>
+            </div>
+        </div>
+    </footer>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/cropzee.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/additional-methods.min.js"></script>
+    <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/jqueryfiler/js/jquery.filer.min.js"></script>
+    <script src="assets/js/select2.full.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/doc_experiance.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>AllMediks</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="assets/vendor/jquery-ui/jquery-ui.min.css" rel="stylesheet">
+    <link href="plugins/jqueryfiler/css/jquery.filer.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .image-previewer {
+			height: 150px;
+			width: 150px;
+			display: flex;
+			border-radius: 10px;
+			border: 1px solid lightgrey;
+		}
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+  
+          <a href="index.html" class="logo me-auto"><img src="assets/img/allmedik.png"/></a>
+  
+          <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+              <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+              <li><a class="nav-link scrollto" href="#about">About</a></li>
+              <li><a class="nav-link scrollto" href="#services">Services</a></li>
+              <li><a class="nav-link scrollto" href="#departments">Specializtion</a></li>
+              <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+              <li class="dropdown"><a href="#"><span>My Account</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                    <li><a href="profile_type.html">Register</a></li>
+                    <li><a href="#">Sign In</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#">Careers</a></li>
+              <li><a class="nav-link scrollto" href="#">Mobile App</a></li>
+              
+              
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav>
+  
+          <a href="buy_token.html" class="appointment-btn scrollto"><span class="d-none d-md-inline">Buy</span> Token</a>
+  
+        </div>
+      </header>
+
+    <main id="main">
+
+
+        <section class="breadcrumbs">
+            <div class="container" style="margin-top: 50px;">
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <h2>Create Your Account</h2>
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Registration</li>
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+
+        <section style="background-color: #ecf8f9;">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Register | Patient</h2>
+                  
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card card-body">
+                            <h3 class="text-3xl sm:text-4xl leading-normal font-extrabold tracking-tight text-gray-900">Personal<span class="text-indigo-600" style="color: #3fbbc0"> Information</span></h3>
+                            <form action="#" method="POST" id="patient_register_info" style="margin-top: 20px;">
+                              <input id="action" name="action" style="display: none;" value="register_patient">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="mb-4">
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="profile_image_input">Profile Picture</label>
+                                            <label for="profile_image_input" class="image-previewer" data-cropzee="profile_image_input"></label>
+                                            <input id="profile_image_input" name="profile_image_input" type="file" accept="image/*" style="margin-top: 20px; display: none;">
+                                            <small id="profile_image_input_error" class="error_element"></small>
+
+                                        </div>
+                                       
+
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="firstname">First Name</label>
+                                            <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstname" name="firstname" type="text" placeholder="Enter First Name">
+                                            <small id="firstname_error" class="error_element"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="lastname">Last Name</label>
+                                            <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastname" type="text" name="lastname" placeholder="Enter Last Name">
+                                            <small id="lastname_error" class="error_element"></small>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="mb-4">
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="date_of_birth">Date Of Birth</label>
+                                            <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="date_of_birth" name="date_of_birth" type="text" placeholder="DD/MM/YYYY">
+                                            <small id="date_of_birth_error" class="error_element"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-4">
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="age">Age in Years</label>
+                                            <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="age" name="age" type="text" placeholder="E.g 35 Years">
+                                            <small id="age_error" class="error_element"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-4">
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="height">Height</label>
+                                            <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="height" name="height" type="text" placeholder="E.g 175 Centimeters">
+                                            <small id="height_error" class="error_element"></small>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="mb-4">
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="age">Weight</label>
+                                            <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="weight" name="weight" type="text" placeholder="E.g 70 KG">
+                                            <small id="weight_error" class="error_element"></small>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-6">
+                                    <div class="mb-4">
+                                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="gender">Gender</label>
+                                      <div class="relative">
+                                        <select id="gender" name="gender" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                          <option value="">Choose Your Gender</option>
+                                          <option value="M">Male</option>
+                                          <option value="F">Female</option>
+
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <small class="error_element" id="gender_error"></small>
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-6">
+                                    <div class="mb-4">
+                                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="martial_status">Martial Status</label>
+                                      <div class="relative">
+                                        <select id="martial_status" name="martial_status" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
+                                          <option value="">Choose Your Martial Status</option>
+                                          <option value="S">Single</option>
+                                          <option value="M">Married</option>
+                                          <option value="D">Divorced</option>
+                                          <option value="W">Widowed</option>
+
+                                         
+
+                                        </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                          <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                            <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                                          </svg>
+                                        </div>
+                                      </div>
+                                      <small class="error_element" id="martial_status_error"></small>
+                                    </div>
+                                  </div>
+                                
+
+
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-4">
+                                  <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="emergency_contact">Emergency Contact</label>
+                                    <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="emergency_contact" name="emergency_contact" type="text" placeholder="Enter Name">
+                                    <small id="emergency_contact_error" class="error_element"></small>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="relationship">Relationship</label>
+                                    <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="relationship" name="relationship" type="text" placeholder="Enter Relationship ">
+                                    <small id="relationship_error" class="error_element"></small>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4">
+                                  <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="phone_number">Phone Number</label>
+                                    <input class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone_number" name="phone_number" type="text" placeholder="Enter Phone Number">
+                                    <small id="phone_number_error" class="error_element"></small>
+                                  </div>
+                                </div>
+                              
+
+
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-8">
+                                  <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="address">Address</label>
+                                    <textarea class="appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="8" id="address" name="address" type="text" placeholder="Enter Address Of the Contact Person"></textarea>
+                                    <small id="address_error" class="error_element"></small>
+                                  </div>
+                                </div>
+                             
+                              
+
+
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="driver_permit">Driver Permit</label>
+                                    <input type="file" name="driver_permit[]" id="driver_permit" multiple="multiple">
+                                    <small id="driver_permit_error" class="error_element"></small>
+                                  </div>
+                                </div>
+                             
+                              
+
+
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="passport">Passport</label>
+                                    <input type="file" name="passport[]" id="passport" multiple="multiple">
+                                    <small id="passport_error" class="error_element"></small>
+                                  </div>
+                                </div>
+                             
+                              
+
+
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="identity_card">National Identity Card</label>
+                                    <input type="file" name="identity_card[]" id="identity_card" multiple="multiple">
+                                    <small id="identity_card_error" class="error_element"></small>
+                                  </div>
+                                </div>
+                             
+                              
+
+
+                              </div>
+                                <div class="row" style="margin-top: 50px;">
+                                    <div class="col-lg-12">
+                                        <button id="patient_register_btn" class="appointment-btn" type="submit" style="padding: 12px 50px; margin-bottom: 50px; margin-left: 0px;">Submit</button>
+
+                                    </div>
+
+                                </div>
+                                
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-info">
+                  <h3><img  src="assets/img/allmedik.png" style="max-height: 140px; width: 140px;" /></h3>
+                  <p>
+                    A108 Adam Street <br>
+                    NY 535022, USA<br><br>
+                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                    <strong>Email:</strong> info@example.com<br>
+                  </p>
+                  <div class="social-links mt-3">
+                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Pharmacies</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Labortaries</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+                  <li><i class="bx bx-chevron-right"></i> <a href="#">Radiology / Sonography </a></li>
+                  
+                </ul>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 footer-newsletter">
+                <h4>Our Newsletter</h4>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <form action="" method="post">
+                  <input type="email" name="email"><input type="submit" value="Subscribe">
+                </form>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>ALLMEDIKS</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medicio-free-bootstrap-theme/ -->
+            Designed by <a href="#">QasimIhsan</a>
+          </div>
+        </div>
+      </footer>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/cropzee.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/additional-methods.min.js"></script>
+    <script src="assets/vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="plugins/jqueryfiler/js/jquery.filer.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/patient_register.js"></script>
+    <script>
+      function initialize() {
+  var input = document.getElementById('address');
+  new google.maps.places.Autocomplete(input);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    
+
+</body>
+
+</html>
